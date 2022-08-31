@@ -40,3 +40,12 @@ you would weigh about {mass} of your weight on Earth""".format(moon="Moon", mass
 print(f'Mas percentage is {mass_percentage}')
 print(f'Mas percentage is {round(100/6, 1)}')
 print(f'The title using f-string is {title.title()}')
+
+name = 'Ganymede'
+planet = 'Mars'
+gravity = '1.43'
+
+template =  f"""Gravity Facts about {name}
+----------------------------------------
+Planet Name: {planet}
+Gravity on {name}: {gravity} m/s2"""
