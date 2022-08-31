@@ -1,3 +1,4 @@
+import sys # To Capture inputs
 from datetime import date
 
 sum = 1 + 2
@@ -26,3 +27,14 @@ print(result)
 # Date
 print('Today is:', date.today())
 print('Today is: ' + str(date.today()) + ' with as string')
+
+# Collect input
+# Command-Line
+print(sys.argv)
+print(sys.argv[0]) # program name
+print(sys.argv[1]) # first arg
+
+# User input
+print("Welcome to the greeter program")
+name = input("Enter your name ")
+print("Greetings: " + name)
