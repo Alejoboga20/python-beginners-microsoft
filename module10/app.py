@@ -35,3 +35,25 @@ original_planet['diameter [km]'] = {
 
 print('Planet with dictionary inside: ', original_planet)
 print(f"Diameter in KM: {original_planet['diameter [km]']['polar']}")
+
+# Keys and values
+rainfall = {
+    'october': 3.5,
+    'november': 4.2,
+    'december': 2.1
+}
+
+for key in rainfall.keys():
+  print(f'{key}: {rainfall[key]}cm3')
+
+if 'december' in rainfall: # Check if key exists before update value
+  rainfall['december'] = rainfall['december'] + 1
+else:
+  rainfall['december'] = 1
+
+total_rainfall_amount = 0
+
+for value in rainfall.values():
+  total_rainfall_amount += value
+
+print(total_rainfall_amount)
